@@ -67,7 +67,7 @@ export default function Tech() {
     ];
 
     return (
-        <div className=' max-w-5xl mx-auto px-8'>
+        <div className=' max-w-5xl mx-auto px-8 animate-move-up'>
             <Title
                 text='Tech 🔧'
                 len={32}

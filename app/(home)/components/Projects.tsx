@@ -60,7 +60,7 @@ export default function Projects() {
                 className='flex flex-col items-center justify-center rotate-3'
             />
 
-            <h2 className='mt-10 mb-1 text-center font-bold italic text-lg md:text-2xl'>Projects I've Worked On</h2>
+            <h2 className='mt-10 mb-1 text-center font-bold italic text-lg md:text-2xl'>Projects I&apos;ve Worked On</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 pt-3 gap-5'>
                 {extProjects.map((project, index) => {
                     return (

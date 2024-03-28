@@ -4,10 +4,10 @@ import Title from './Title';
 
 export default function Hero() {
     return (
-        <div className='min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between'>
+        <div className='min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up'>
             <div className=' space-y-10 text-center lg:text-left break-words'>
                 <h2 className='text-4xl lg:text-7xl font-bold'>Hello! 👋</h2>
-                <span className='text-5xl lg:text-8xl font-bold underline underline-offset-8 decoration-green-500'>I'm Bintang.</span>
+                <span className='text-5xl lg:text-8xl font-bold underline underline-offset-8 decoration-green-500'>I&apos;m Bintang.</span>
 
                 <p className='md:w-96 text-lg text-gray-300'>
                     {
