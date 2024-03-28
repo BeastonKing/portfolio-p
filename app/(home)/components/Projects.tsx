@@ -71,7 +71,7 @@ export default function Projects() {
             <div className='grid grid-cols-1 md:grid-cols-2 pt-3 gap-5'>
                 {extProjects.map((project, index) => {
                     return (
-                        <Link href={project.link} key={index} scroll={false} className={cn(project.isAvailable ? 'cursor-pointer' : 'cursor-default')}>
+                        <Link href={project.link} key={index} scroll={false} target={project.isAvailable ? '_blank' : '_self'}>
                             <div
                                 className={cn(
                                     'p-4 rounded-md',
@@ -102,7 +102,7 @@ export default function Projects() {
             <div className='grid grid-cols-1 md:grid-cols-2 pt-3 gap-5 items-center'>
                 {personalProjects.map((project, index) => {
                     return (
-                        <Link href={project.link} key={index} scroll={false} className={cn(project.isAvailable ? 'cursor-pointer' : 'cursor-default')}>
+                        <Link href={project.link} key={index} scroll={false} target={project.isAvailable ? '_blank' : '_self'}>
                             <div
                                 className={cn(
                                     'p-5 rounded-md',
