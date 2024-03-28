@@ -11,7 +11,7 @@ export default function Hero() {
 
                 <p className='md:w-96 text-lg text-gray-300'>
                     {
-                        'Lorem ipsum dolor sit amet consectetur adipisicing elit. A quaerat fugit sapiente expedita exercitationem voluptatem.'
+                        'I\'m a third-year Information System student at the University of Indonesia who\'s passionate in Website and Software Engineering, specializing in both Front-End and Back-End Development.'
                     }
                 </p>
 

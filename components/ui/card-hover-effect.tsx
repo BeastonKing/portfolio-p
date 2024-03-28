@@ -58,7 +58,7 @@ export const HoverEffect = ({
                         <div className='rounded-md w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:ring-2 ring-green-500 relative z-20 transition-all duration-300'>
                             <div className='py-8 z-50 relative space-y-5'>
                                 <Icon className='w-8 h-8 mx-auto' />
-                                <p className='text-2xl font-bold text-center text-gray-200 break-words'>
+                                <p className='text-xl font-bold text-center text-gray-200 break-words'>
                                     {item.text}
                                 </p>
                             </div>
