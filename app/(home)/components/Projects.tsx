@@ -55,7 +55,7 @@ export default function Projects() {
             link: '#',
             isAvailable: false,
             desc: 'The first version of my Porfolio Website',
-            cover: '/bhr-1.png',
+            cover: '/personal-pp.png',
             background: 'bg-indigo-500',
         },
     ];
