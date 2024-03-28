@@ -3,6 +3,7 @@ import Title from './Title';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
+import { LuExternalLink } from "react-icons/lu";
 
 export default function Projects() {
     const extProjects = [
@@ -10,12 +11,14 @@ export default function Projects() {
             title: "Indonesia's International Coaching Summit",
             desc: "Official website of Indonesia's International Coaching Summit (IICS) 2023.",
             link: 'https://iics.icfjakarta.org/',
+            isAvailable: true,
             cover: '/icf-1.png',
             background: 'bg-indigo-500',
         },
         {
             title: 'Coaching Yuk',
             link: 'https://www.coachingyuk.com/',
+            isAvailable: true,
             desc: 'A coaching platform for those who seek guidance and encouragement by professional and certified coaches.',
             cover: '/cyuk-1.png',
             background: 'bg-green-500',
@@ -23,6 +26,7 @@ export default function Projects() {
         {
             title: 'Makro Alpha Solusindo ERP',
             link: '#',
+            isAvailable: false,
             desc: 'A highly-customized ERP and CMS for PT. Makro Alpha Solusindo.',
             cover: '/mas-cms-1.png',
             background: 'bg-yellow-500',
@@ -30,6 +34,7 @@ export default function Projects() {
         {
             title: 'My Medione',
             link: '#',
+            isAvailable: false,
             desc: 'A mobile-based hospital appointment app that provide healthcare information for users to see details, manage, and schedule an appointment.',
             cover: '/med-1.png',
             background: 'bg-cyan-500',
@@ -37,6 +42,7 @@ export default function Projects() {
         {
             title: 'Bima Harsa Rahardja Company Page',
             link: 'https://www.bimaharsarahardja.co.id/',
+            isAvailable: true,
             desc: 'A company landing page designed for PT Bima Harsa Rahardja.',
             cover: '/bhr-1.png',
             background: 'bg-red-500',
@@ -47,6 +53,7 @@ export default function Projects() {
         {
             title: 'Personal Website',
             link: '#',
+            isAvailable: false,
             desc: 'The first version of my Porfolio Website',
             cover: '/bhr-1.png',
             background: 'bg-indigo-500',
@@ -64,7 +71,7 @@ export default function Projects() {
             <div className='grid grid-cols-1 md:grid-cols-2 pt-3 gap-5'>
                 {extProjects.map((project, index) => {
                     return (
-                        <Link href={project.link} key={index} scroll={false}>
+                        <Link href={project.link} key={index} scroll={false} className={cn(project.isAvailable ? 'cursor-pointer' : 'cursor-default')}>
                             <div
                                 className={cn(
                                     'p-4 rounded-md',
@@ -73,13 +80,16 @@ export default function Projects() {
                             >
                                 <DirectionAwareHover
                                     imageUrl={project.cover}
-                                    className='w-full space-y-5 cursor-pointer'
+                                    className= {cn('w-full space-y-5', project.isAvailable ? 'cursor-pointer' : 'cursor-default')} 
                                 >
-                                    <div className=' space-y-3'>
+                                    <div className=' space-y-1'>
                                         <h1 className='text-xl font-bold'>{project.title}</h1>
                                         <div className='text-sm'>
                                             {project.desc}
                                         </div>
+                                        { project.isAvailable ? <div className='my-0'>
+                                            <LuExternalLink className='text-lg' />
+                                        </div> : '' }
                                     </div>
                                 </DirectionAwareHover>
                             </div>
@@ -92,7 +102,7 @@ export default function Projects() {
             <div className='grid grid-cols-1 md:grid-cols-2 pt-3 gap-5 items-center'>
                 {personalProjects.map((project, index) => {
                     return (
-                        <Link href={project.link} key={index} scroll={false}>
+                        <Link href={project.link} key={index} scroll={false} className={cn(project.isAvailable ? 'cursor-pointer' : 'cursor-default')}>
                             <div
                                 className={cn(
                                     'p-5 rounded-md',
@@ -101,13 +111,16 @@ export default function Projects() {
                             >
                                 <DirectionAwareHover
                                     imageUrl={project.cover}
-                                    className='w-full space-y-5 cursor-pointer'
+                                    className= {cn('w-full space-y-5', project.isAvailable ? 'cursor-pointer' : 'cursor-default')} 
                                 >
                                     <div className=' space-y-3'>
                                         <h1 className='text-xl font-bold'>{project.title}</h1>
                                         <div className='text-sm'>
                                             {project.desc}
                                         </div>
+                                        { project.isAvailable ? <div className='my-0'>
+                                            <LuExternalLink className='text-lg' />
+                                        </div> : '' }
                                     </div>
                                 </DirectionAwareHover>
                             </div>

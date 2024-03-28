@@ -5,6 +5,7 @@ import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { FaJava } from 'react-icons/fa';
 import {
     SiDjango,
+    SiExpress,
     SiLaravel,
     SiMongodb,
     SiNextdotjs,
@@ -35,6 +36,10 @@ export default function Tech() {
             Icon: SiNodedotjs,
         },
         {
+            text: 'Express.js',
+            Icon: SiExpress,
+        },
+        {
             text: 'Spring Boot',
             Icon: SiSpringboot,
         },
@@ -54,11 +59,10 @@ export default function Tech() {
             text: 'MongoDB',
             Icon: SiMongodb,
         },
-        // {
-        //     text: 'React',
-        //     Icon: SiReact,
-        //     isCurrentlyLearning: true
-        // },
+        {
+            text: 'React',
+            Icon: SiReact,
+        },
         // {
         //     text: 'Next',
         //     Icon: SiNextdotjs,
