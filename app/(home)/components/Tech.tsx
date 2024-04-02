@@ -8,6 +8,7 @@ import {
     SiExpress,
     SiLaravel,
     SiMongodb,
+    SiMysql,
     SiNextdotjs,
     SiNodedotjs,
     SiPhp,
@@ -54,6 +55,10 @@ export default function Tech() {
         {
             text: 'PostgreSQL',
             Icon: SiPostgresql,
+        },
+        {
+            text: 'MySQL',
+            Icon: SiMysql,
         },
         {
             text: 'MongoDB',

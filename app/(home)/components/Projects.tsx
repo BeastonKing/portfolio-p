@@ -58,6 +58,14 @@ export default function Projects() {
             cover: '/personal-pp.png',
             background: 'bg-indigo-500',
         },
+        {
+            title: 'MiniSOS',
+            link: 'https://beastonking-ristek-medsos.cyclic.app/home',
+            isAvailable: true,
+            desc: 'A minimalistic social media where users can write, edit, delete, and see self or other\'s posts',
+            cover: '/minisos-1.png',
+            background: 'bg-green-500',
+        },
     ];
 
     return (
