@@ -8,6 +8,14 @@ import { LuExternalLink } from "react-icons/lu";
 export default function Projects() {
     const extProjects = [
         {
+            title: "Unimate ID",
+            desc: "A dynamic platform where students can access study materials and learning tools for scholarship",
+            link: 'https://unimate-fe.vercel.app/',
+            isAvailable: true,
+            cover: '/unimate-1.png',
+            background: 'bg-cyan-500',
+        },
+        {
             title: "Indonesia's International Coaching Summit",
             desc: "Official website of Indonesia's International Coaching Summit (IICS) 2023.",
             link: 'https://iics.icfjakarta.org/',
@@ -31,22 +39,22 @@ export default function Projects() {
             cover: '/mas-cms-1.png',
             background: 'bg-yellow-500',
         },
-        {
-            title: 'My Medione',
-            link: '#',
-            isAvailable: false,
-            desc: 'A mobile-based hospital appointment app that provide healthcare information for users to see details, manage, and schedule an appointment.',
-            cover: '/med-1.png',
-            background: 'bg-cyan-500',
-        },
-        {
-            title: 'Bima Harsa Rahardja Company Page',
-            link: 'https://www.bimaharsarahardja.co.id/',
-            isAvailable: true,
-            desc: 'A company landing page designed for PT Bima Harsa Rahardja.',
-            cover: '/bhr-1.png',
-            background: 'bg-red-500',
-        },
+        // {
+        //     title: 'My Medione',
+        //     link: '#',
+        //     isAvailable: false,
+        //     desc: 'A mobile-based hospital appointment app that provide healthcare information for users to see details, manage, and schedule an appointment.',
+        //     cover: '/med-1.png',
+        //     background: 'bg-cyan-500',
+        // },
+        // {
+        //     title: 'Bima Harsa Rahardja Company Page',
+        //     link: 'https://www.bimaharsarahardja.co.id/',
+        //     isAvailable: true,
+        //     desc: 'A company landing page designed for PT Bima Harsa Rahardja.',
+        //     cover: '/bhr-1.png',
+        //     background: 'bg-red-500',
+        // },
     ];
 
     const personalProjects = [
