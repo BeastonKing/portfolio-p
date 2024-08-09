@@ -16,12 +16,20 @@ export default function Projects() {
             background: 'bg-cyan-500',
         },
         {
+            title: "Shavemax",
+            desc: "A mobile app to help users find personalized and stylish hairstyle recommendations based on their facial features and hair types.",
+            link: 'https://github.com/orgs/C241-PS208/repositories',
+            isAvailable: true,
+            cover: '/shavemax.png',
+            background: 'bg-red-500',
+        },
+        {
             title: "Indonesia's International Coaching Summit",
             desc: "Official website of Indonesia's International Coaching Summit (IICS) 2023.",
             link: 'https://iics.icfjakarta.org/',
             isAvailable: true,
             cover: '/icf-1.png',
-            background: 'bg-indigo-500',
+            background: 'bg-purple-500',
         },
         {
             title: 'Coaching Yuk',
@@ -32,12 +40,28 @@ export default function Projects() {
             background: 'bg-green-500',
         },
         {
+            title: 'Personal Website',
+            link: '#',
+            isAvailable: false,
+            desc: 'The first version of my Porfolio Website',
+            cover: '/personal-pp.png',
+            background: 'bg-yellow-500',
+        },
+        {
+            title: 'MiniSOS',
+            link: 'https://github.com/BeastonKing/minisos',
+            isAvailable: true,
+            desc: 'A minimalistic social media where users can write, edit, delete, and see self or other\'s posts',
+            cover: '/minisos-1.png',
+            background: 'bg-blue-500',
+        },
+        {
             title: 'Makro Alpha Solusindo ERP',
             link: '#',
             isAvailable: false,
             desc: 'A highly-customized ERP and CMS for PT. Makro Alpha Solusindo.',
             cover: '/mas-cms-1.png',
-            background: 'bg-yellow-500',
+            background: 'bg-orange-500',
         },
         // {
         //     title: 'My Medione',
@@ -57,24 +81,24 @@ export default function Projects() {
         // },
     ];
 
-    const personalProjects = [
-        {
-            title: 'Personal Website',
-            link: '#',
-            isAvailable: false,
-            desc: 'The first version of my Porfolio Website',
-            cover: '/personal-pp.png',
-            background: 'bg-indigo-500',
-        },
-        {
-            title: 'MiniSOS',
-            link: 'https://beastonking-ristek-medsos.cyclic.app/home',
-            isAvailable: true,
-            desc: 'A minimalistic social media where users can write, edit, delete, and see self or other\'s posts',
-            cover: '/minisos-1.png',
-            background: 'bg-green-500',
-        },
-    ];
+    // const personalProjects = [
+    //     {
+    //         title: 'Personal Website',
+    //         link: '#',
+    //         isAvailable: false,
+    //         desc: 'The first version of my Porfolio Website',
+    //         cover: '/personal-pp.png',
+    //         background: 'bg-indigo-500',
+    //     },
+    //     {
+    //         title: 'MiniSOS',
+    //         link: 'https://github.com/BeastonKing/minisos',
+    //         isAvailable: true,
+    //         desc: 'A minimalistic social media where users can write, edit, delete, and see self or other\'s posts',
+    //         cover: '/minisos-1.png',
+    //         background: 'bg-green-500',
+    //     },
+    // ];
 
     return (
         <div className='py-10 p-5 sm:p-0'>
@@ -114,7 +138,7 @@ export default function Projects() {
                 })}
             </div>
 
-            <h2 className='mt-16 mb-1 text-center font-bold italic text-lg md:text-2xl'>Personal Projects</h2>
+            {/* <h2 className='mt-16 mb-1 text-center font-bold italic text-lg md:text-2xl'>Personal Projects</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 pt-3 gap-5 items-center'>
                 {personalProjects.map((project, index) => {
                     return (
@@ -143,7 +167,7 @@ export default function Projects() {
                         </Link>
                     );
                 })}
-            </div>
+            </div> */}
         </div>
     );
 }
